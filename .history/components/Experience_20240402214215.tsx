@@ -1,0 +1,28 @@
+import React from "react";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import { motion } from "framer-motion";
+
+import "react-vertical-timeline-component/style.min.css";
+import { experiences } from "@/app/constants";
+import { StarWrapper } from "@/app/hoc";
+import { textVariant } from "@/app/utils/motion";
+
+const Experience = () => {
+  return (
+    <div id='experience' className='h-screen'>
+      <motion.div variants={textVariant(0.2)} initial="hidden" animate="show" exit="hidden">
+        <p className='sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider text-center md:text-start'>
+          What i have done so far?
+        </p>
+        <h2 className='text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center md:text-start'>
+          Overview
+        </h2>
+      </motion.div>
+    </div>
+  )
+}
+
+export default Experience
