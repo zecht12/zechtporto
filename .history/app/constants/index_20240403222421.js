@@ -93,6 +93,8 @@ typescript,html,css,reactjs,redux,tailwind,nodejs,mongodb,git,figma,docker,meta,
     const experiences = [
         {
         title: "React.js Developer",
+        company_name: "",
+        icon: "",
         iconBg: "#383E56",
         date: "December 2022 - January 2023",
         points: [
@@ -102,6 +104,8 @@ typescript,html,css,reactjs,redux,tailwind,nodejs,mongodb,git,figma,docker,meta,
         },
         {
         title: "Fullstack Next Js Developer",
+        company_name: "",
+        icon: "",
         iconBg: "#E6DEDD",
         date: "January 2023 - Now",
         points: [

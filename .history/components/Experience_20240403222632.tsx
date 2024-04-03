@@ -15,7 +15,10 @@ import Image from "next/image";
 
 const ExperienceCard = ({ experience }:any) => {
   return (
-    <VerticalTimelineElement visible={true} className="vertical-timeline-element--work" contentStyle={{ background: "#1d1836", color: "#fff", }} contentArrowStyle={{ borderRight: "7px solid  #232631" }} date={experience.date} iconStyle={{ background: experience.iconBg }}>
+    // <VerticalTimelineElement visible={true} className="vertical-timeline-element--work" contentStyle={{ background: "#1d1836", color: "#fff", }} contentArrowStyle={{ borderRight: "7px solid  #232631" }} date={experience.date} iconStyle={{ background: experience.iconBg }} icon={
+    //     <div className='flex justify-center items-center w-full h-full'>
+    //       <Image src={experience.icon} alt={experience.company_name} width={100} height={100} className="h-[60%] w-[60%] object-contain " />
+    //     </div>}>
       <div>
         <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
         <p className='text-secondary text-[16px] font-semibold' style={{ margin: 0 }}>

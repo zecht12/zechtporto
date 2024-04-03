@@ -93,6 +93,8 @@ typescript,html,css,reactjs,redux,tailwind,nodejs,mongodb,git,figma,docker,meta,
     const experiences = [
         {
         title: "React.js Developer",
+        company_name: "",
+        icon: "",
         iconBg: "#383E56",
         date: "December 2022 - January 2023",
         points: [
@@ -102,12 +104,14 @@ typescript,html,css,reactjs,redux,tailwind,nodejs,mongodb,git,figma,docker,meta,
         },
         {
         title: "Fullstack Next Js Developer",
+        company_name: "",
+        icon: "",
         iconBg: "#E6DEDD",
-        date: "January 2023 - Now",
+        date: "January 2023 - January 2024",
         points: [
             "Developing and maintaining web applications using Nextjs and other related technologies.",
             "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Implementing Web3 Blockchain on nextjs application for securing data and transparent process.",
+            "Participating in code reviews and providing constructive feedback to other developers.",
         ],
         },
     ];

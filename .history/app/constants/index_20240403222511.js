@@ -102,6 +102,8 @@ typescript,html,css,reactjs,redux,tailwind,nodejs,mongodb,git,figma,docker,meta,
         },
         {
         title: "Fullstack Next Js Developer",
+        company_name: "",
+        icon: "",
         iconBg: "#E6DEDD",
         date: "January 2023 - Now",
         points: [
