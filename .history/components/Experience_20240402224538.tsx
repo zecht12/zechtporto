@@ -15,7 +15,7 @@ import Image from "next/image";
 
 const ExperienceCard = ({ experience }:any) => {
   return (
-    <VerticalTimelineElement visible={true} className="vertical-timeline-element--work" contentStyle={{ background: "#1d1836", color: "#fff", }} contentArrowStyle={{ borderRight: "7px solid  #232631" }} date={experience.date} iconStyle={{ background: experience.iconBg }} icon={
+    <VerticalTimelineElement className="text-white" contentStyle={{ background: "#1d1836", color: "#fff", }} contentArrowStyle={{ borderRight: "7px solid  #232631" }} date={experience.date} iconStyle={{ background: experience.iconBg }} icon={
         <div className='flex justify-center items-center w-full h-full'>
           <Image src={experience.icon} alt={experience.company_name} width={100} height={100} className="h-[60%] w-[60%] object-contain " />
         </div>}>
@@ -28,7 +28,9 @@ const ExperienceCard = ({ experience }:any) => {
 
       <ul className='mt-5 list-disc ml-5 space-y-2'>
         {experience.points.map((point:any, index:any) => (
-          <li key={`experience-point-${index}`} className='text-white-100 text-[14px] pl-1 tracking-wider'>
+          <li key={`experience-point-${index}`}
+            className='text-white-100 text-[14px] pl-1 tracking-wider'
+          >
             {point}
           </li>
         ))}
@@ -45,12 +47,12 @@ const Experience = () => {
           What I have done so far
         </p>
         <h2 className='text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center md:text-start'>
-          Timeline
+          Work Experience.
         </h2>
       </motion.div>
 
       <div className='mt-20 flex flex-col'>
-        <VerticalTimeline >
+        <VerticalTimeline>
           {experiences.map((experience, index) => (
             <ExperienceCard
               key={`experience-${index}`}

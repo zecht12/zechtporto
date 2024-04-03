@@ -15,7 +15,7 @@ import Image from "next/image";
 
 const ExperienceCard = ({ experience }:any) => {
   return (
-    <VerticalTimelineElement visible={true} className="vertical-timeline-element--work" contentStyle={{ background: "#1d1836", color: "#fff", }} contentArrowStyle={{ borderRight: "7px solid  #232631" }} date={experience.date} iconStyle={{ background: experience.iconBg }} icon={
+    <VerticalTimelineElement className="text-white" contentStyle={{ background: "#1d1836", color: "#fff", }} contentArrowStyle={{ borderRight: "7px solid  #232631" }} date={experience.date} iconStyle={{ background: experience.iconBg }} icon={
         <div className='flex justify-center items-center w-full h-full'>
           <Image src={experience.icon} alt={experience.company_name} width={100} height={100} className="h-[60%] w-[60%] object-contain " />
         </div>}>
@@ -39,18 +39,18 @@ const ExperienceCard = ({ experience }:any) => {
 
 const Experience = () => {
   return (
-    <div id='experience' className='relative w-full h-auto px-4 xl:px-10 md:px-8 sm:px-6 py-4 xl:py-10 md:py-8 sm:py-6'>
+    div id='experience' className='relative w-full h-auto px-4 xl:px-10 md:px-8 sm:px-6 py-4 xl:py-10 md:py-8 sm:py-6'>
       <motion.div variants={textVariant(0.2)}>
         <p className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider text-center md:text-start">
           What I have done so far
         </p>
         <h2 className='text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center md:text-start'>
-          Timeline
+          Work Experience.
         </h2>
       </motion.div>
 
       <div className='mt-20 flex flex-col'>
-        <VerticalTimeline >
+        <VerticalTimeline>
           {experiences.map((experience, index) => (
             <ExperienceCard
               key={`experience-${index}`}

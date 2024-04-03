@@ -45,7 +45,7 @@ const Experience = () => {
           What I have done so far
         </p>
         <h2 className='text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center md:text-start'>
-          Timeline
+          SkillTimeline
         </h2>
       </motion.div>
 
