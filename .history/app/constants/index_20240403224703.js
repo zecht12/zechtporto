@@ -1,5 +1,5 @@
 import {mobile,backend,creator,web,javascript,
-typescript,html,css,reactjs,tailwind,nodejs,mongodb,git,figma,docker,carrent,jobit,tripguide,threejs, grock, supabase, prisma} from "@/public/assets";
+typescript,html,css,reactjs,tailwind,nodejs,mongodb,git,figma,docker,carrent,jobit,tripguide,threejs, grock} from "@/public/assets";
 
     export const navLinks = [
         {
@@ -70,11 +70,11 @@ typescript,html,css,reactjs,tailwind,nodejs,mongodb,git,figma,docker,carrent,job
         },
         {
         name: "Supabase",
-        icon: supabase,
+        icon: supa,
         },
         {
         name: "Prisma",
-        icon: prisma,
+        icon: mongodb,
         },
         {
         name: "Three JS",

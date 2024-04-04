@@ -22,7 +22,6 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import supabase from './tech/supabase-logo-icon.png'
-import prisma from './tech/prisma.svg'
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -35,8 +34,6 @@ import tripguide from "./tripguide.png";
 
 export {
   grock,
-  prisma,
-  supabase,
   logo,
   backend,
   creator,

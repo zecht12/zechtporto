@@ -1,5 +1,5 @@
 import {mobile,backend,creator,web,javascript,
-typescript,html,css,reactjs,tailwind,nodejs,mongodb,git,figma,docker,carrent,jobit,tripguide,threejs, grock, supabase, prisma} from "@/public/assets";
+typescript,html,css,reactjs,redux,tailwind,nodejs,mongodb,git,figma,docker,meta,starbucks,tesla,shopify,carrent,jobit,tripguide,threejs, grock} from "@/public/assets";
 
     export const navLinks = [
         {
@@ -57,6 +57,10 @@ typescript,html,css,reactjs,tailwind,nodejs,mongodb,git,figma,docker,carrent,job
         icon: reactjs,
         },
         {
+        name: "Redux Toolkit",
+        icon: redux,
+        },
+        {
         name: "Tailwind CSS",
         icon: tailwind,
         },
@@ -67,14 +71,6 @@ typescript,html,css,reactjs,tailwind,nodejs,mongodb,git,figma,docker,carrent,job
         {
         name: "MongoDB",
         icon: mongodb,
-        },
-        {
-        name: "Supabase",
-        icon: supabase,
-        },
-        {
-        name: "Prisma",
-        icon: prisma,
         },
         {
         name: "Three JS",
@@ -115,22 +111,22 @@ typescript,html,css,reactjs,tailwind,nodejs,mongodb,git,figma,docker,carrent,job
         points: [
             "Developing and maintaining web applications using Nextjs and other related technologies.",
             "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Making IrisPerfume website bussiness.",
+            "Making IrisPerfume website bussiness",
             "Implementing Web3 Blockchain on nextjs application for securing data and transparent process.",
         ],
         },
-        // {
-        //     title: "Fullstack Web3 Developer Using nextjs",
-        //     company_name: "",
-        //     icon:"",
-        //     iconBg: "#E6DEDD",
-        //     date: "January 2023 - Now",
-        //     points: [
-        //         "Developing and maintaining web applications using Nextjs and other related technologies.",
-        //         "Implementing responsive design and ensuring cross-browser compatibility.",
-        //         "Implementing Web3 Blockchain on nextjs application for securing data and transparent process.",
-        //     ],
-        // },
+        {
+            title: "Fullstack Web3 Developer Using nextjs",
+            company_name: "",
+            icon:"",
+            iconBg: "#E6DEDD",
+            date: "January 2023 - Now",
+            points: [
+                "Developing and maintaining web applications using Nextjs and other related technologies.",
+                "Implementing responsive design and ensuring cross-browser compatibility.",,
+                "Implementing Web3 Blockchain on nextjs application for securing data and transparent process.",
+            ],
+        },
     ];
     
     const testimonials = [

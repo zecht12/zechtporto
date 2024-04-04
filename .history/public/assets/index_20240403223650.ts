@@ -6,7 +6,7 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-import grock from './company/logo-GR.png'
+import grock from './company/'
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -21,8 +21,6 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-import supabase from './tech/supabase-logo-icon.png'
-import prisma from './tech/prisma.svg'
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -34,9 +32,6 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 export {
-  grock,
-  prisma,
-  supabase,
   logo,
   backend,
   creator,

@@ -35,8 +35,6 @@ import tripguide from "./tripguide.png";
 
 export {
   grock,
-  prisma,
-  supabase,
   logo,
   backend,
   creator,
