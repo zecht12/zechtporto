@@ -1,9 +1,8 @@
-'use client'
-
 import React from "react";
+
 import { BallCanvas } from "./canvas";
-import { StarWrapper } from "@/app/hoc";
-import { technologies } from "@/app/constants";
+import { SectionWrapper } from "@/app../hoc";
+import { technologies } from "../constants";
 
 const Tech = () => {
   return (
@@ -17,4 +16,4 @@ const Tech = () => {
   );
 };
 
-export default StarWrapper(Tech, "tech");
+export default SectionWrapper(Tech, "tech");

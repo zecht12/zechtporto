@@ -1,5 +1,3 @@
-'use client'
-
 import React from "react";
 import { BallCanvas } from "./canvas";
 import { StarWrapper } from "@/app/hoc";

@@ -116,7 +116,7 @@ typescript,html,css,reactjs,tailwind,nodejs,mongodb,git,figma,docker,carrent,job
             "Developing and maintaining web applications using Nextjs and other related technologies.",
             "Implementing responsive design and ensuring cross-browser compatibility.",
             "Making IrisPerfume website bussiness.",
-        ],
+
         },
         // {
         //     title: "Fullstack Web3 Developer Using nextjs",

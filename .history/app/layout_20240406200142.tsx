@@ -1,7 +1,8 @@
 import { Hero, Navbar, Sidebar } from '@/components'
 import './globals.css'
 import type { Metadata } from "next";
-import { Sora } from "next/font/google";
+import { Sora } from "next/font/google";on
+import { useRouter } from 'next/navigati
 
 const sora = Sora({
   subsets:['latin'],

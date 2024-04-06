@@ -1,12 +1,16 @@
-'use client'
-
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import {Decal,Float,OrbitControls,Preload,useTexture} from "@react-three/drei";
+import {
+  Decal,
+  Float,
+  OrbitControls,
+  Preload,
+  useTexture,
+} from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
-const Ball = (props:any) => {
+const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl]);
 
   return (
@@ -32,7 +36,7 @@ const Ball = (props:any) => {
   );
 };
 
-const BallCanvas = ({ icon }:any) => {
+const BallCanvas = ({ icon }) => {
   return (
     <Canvas
       frameloop='demand'

@@ -1,9 +1,8 @@
-'use client'
-
 import React from "react";
+
 import { BallCanvas } from "./canvas";
 import { StarWrapper } from "@/app/hoc";
-import { technologies } from "@/app/constants";
+import { technologies } from "../constants";
 
 const Tech = () => {
   return (
