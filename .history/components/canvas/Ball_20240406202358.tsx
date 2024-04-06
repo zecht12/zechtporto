@@ -4,9 +4,10 @@ import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import {Decal,Float,OrbitControls,Preload,useTexture} from "@react-three/drei";
 
-import CanvasLoader from "@/components/Loader";
+import CanvasLoader from "../Loader";
 
 const Ball = (imgUrl:any) => {
+  console.log(imgUrl);
   const [decal] = useTexture([imgUrl]);
 
   return (
@@ -19,6 +20,7 @@ const Ball = (imgUrl:any) => {
           color='#fff8eb'
           polygonOffset
           polygonOffsetFactor={-5}
+          flatShading
         />
         <Decal
           position={[0, 0, 1]}
@@ -31,7 +33,7 @@ const Ball = (imgUrl:any) => {
   );
 };
 
-function BallCanvas({ icon }: any) {
+const BallCanvas = ({ icon }:any) => {
   return (
     <Canvas
       frameloop='demand'
@@ -46,6 +48,6 @@ function BallCanvas({ icon }: any) {
       <Preload all />
     </Canvas>
   );
-}
+};
 
 export default BallCanvas;

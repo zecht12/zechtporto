@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/hoc/StarWrapper.jsx", "app/layout.jsx", "components/canvas/Computers.tsx", "app/hoc/index.js", "app/utils/motion.ts", "components/Experience.tsx", "app/constants/index.js", "components/canvas/Ball.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/hoc/StarWrapper.jsx", "app/layout.jsx", "components/canvas/Computers.tsx", "app/hoc/index.js", "app/utils/motion.ts", "components/Experience.tsx", "app/constants/index.js", "components/canvas/Ball.jsx"],
   "exclude": ["node_modules"]
 }

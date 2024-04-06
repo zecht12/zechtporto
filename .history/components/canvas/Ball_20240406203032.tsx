@@ -6,8 +6,8 @@ import {Decal,Float,OrbitControls,Preload,useTexture} from "@react-three/drei";
 
 import CanvasLoader from "@/components/Loader";
 
-const Ball = (imgUrl:any) => {
-  const [decal] = useTexture([imgUrl]);
+const Ball = (props:any) => {
+  const [decal] = useTexture([props.imgUrl]);
 
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
@@ -31,7 +31,7 @@ const Ball = (imgUrl:any) => {
   );
 };
 
-function BallCanvas({ icon }: any) {
+const BallCanvas = ({ icon }) => {
   return (
     <Canvas
       frameloop='demand'
@@ -46,6 +46,6 @@ function BallCanvas({ icon }: any) {
       <Preload all />
     </Canvas>
   );
-}
+};
 
 export default BallCanvas;

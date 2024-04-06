@@ -4,10 +4,10 @@ import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import {Decal,Float,OrbitControls,Preload,useTexture} from "@react-three/drei";
 
-import CanvasLoader from "@/components/Loader";
+import CanvasLoader from "../Loader";
 
-const Ball = (imgUrl:any) => {
-  const [decal] = useTexture([imgUrl]);
+const Ball = (props:any) => {
+  const [decal] = useTexture([props.imgUrl]);
 
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
@@ -25,13 +25,14 @@ const Ball = (imgUrl:any) => {
           rotation={[2 * Math.PI, 0, 6.25]}
           scale={1}
           map={decal}
+          flatShading
         />
       </mesh>
     </Float>
   );
 };
 
-function BallCanvas({ icon }: any) {
+const BallCanvas = ({ icon }:any) => {
   return (
     <Canvas
       frameloop='demand'
@@ -46,6 +47,6 @@ function BallCanvas({ icon }: any) {
       <Preload all />
     </Canvas>
   );
-}
+};
 
 export default BallCanvas;

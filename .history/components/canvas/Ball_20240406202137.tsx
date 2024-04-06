@@ -4,10 +4,19 @@ import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import {Decal,Float,OrbitControls,Preload,useTexture} from "@react-three/drei";
 
-import CanvasLoader from "@/components/Loader";
+import CanvasLoader from "../Loader";
 
-const Ball = (imgUrl:any) => {
-  const [decal] = useTexture([imgUrl]);
+const Ball = ({ imgUrl }:any) => {
+  const [decal] = useTexture(imgUrl);
+
+  if (error) {
+    console.error("Error loading texture:", error);
+    return null; // Render nothing if there's an error
+  }
+
+  if (loading) {
+    return null; // Render nothing while texture is loading
+  }
 
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
@@ -19,6 +28,7 @@ const Ball = (imgUrl:any) => {
           color='#fff8eb'
           polygonOffset
           polygonOffsetFactor={-5}
+          flatShading
         />
         <Decal
           position={[0, 0, 1]}
@@ -31,7 +41,7 @@ const Ball = (imgUrl:any) => {
   );
 };
 
-function BallCanvas({ icon }: any) {
+const BallCanvas = ({ icon }:any) => {
   return (
     <Canvas
       frameloop='demand'
@@ -46,6 +56,6 @@ function BallCanvas({ icon }: any) {
       <Preload all />
     </Canvas>
   );
-}
+};
 
 export default BallCanvas;
