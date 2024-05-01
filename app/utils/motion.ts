@@ -1,3 +1,5 @@
+import { Variants } from "framer-motion";
+
 export const textVariant = (delay: any) => {
     return {
         hidden: {
@@ -90,4 +92,64 @@ export const staggerContainer = (staggerChildren: any, delayChildren: any) => {
             },
         },
     };
+};
+
+export const cardVariantsFadeIn: Variants = {
+    offscreen: {
+        x: 0,
+        opacity: 0
+    },
+    onscreen: {
+        x: 0,
+        opacity:1,
+        transition: {
+            type: "spring",
+            duration: 1.8
+        }
+    }
+};
+
+export const cardVariantsX: Variants = {
+    offscreen: {
+        x: -50,
+        opacity: 0
+    },
+    onscreen: {
+        x: 0,
+        opacity: 1,
+        transition: {
+            type: "spring",
+            duration: 1.8
+        }
+    }
+};
+
+export const cardVariantsY1: Variants = {
+    offscreen: {
+        y: 50,
+        opacity: 0
+    },
+    onscreen: {
+        y: 0,
+        opacity:1,
+        transition: {
+            type: "spring",
+            duration: 1.8
+        }
+    }
+};
+
+export const cardVariantsY2: Variants = {
+    offscreen: {
+        y: -50,
+        opacity: 0
+    },
+    onscreen: {
+        y: 0,
+        opacity:1,
+        transition: {
+            type: "spring",
+            duration: 1.8
+        }
+    }
 };

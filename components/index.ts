@@ -1,4 +1,4 @@
-import { EarthCanvas, BallCanvas, ComputersCanvas, StarsCanvas } from '@/components/canvas';
+import { EarthCanvas, ComputersCanvas, StarsCanvas } from '@/components/canvas';
 import Navbar from '@/components/Navbar';
 import About from '@/components/About';
 import Tech from '@/components/Tech';
@@ -18,7 +18,6 @@ export {
   Feedbacks,
   Contact,
   EarthCanvas, 
-  BallCanvas, 
   ComputersCanvas, 
   StarsCanvas,
   Sidebar
