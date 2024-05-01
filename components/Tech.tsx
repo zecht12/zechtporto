@@ -9,7 +9,7 @@ import { cardVariantsFadeIn, fadeIn } from "@/app/utils/motion";
 
 const Tech = () => {
   return (
-    <div className="w-full h-auto xl:px-20 md:px-12 sm:px-10 xs:px-8 px-6">
+    <div id="tech" className="relative w-full h-auto px-4 xl:px-10 md:px-8 sm:px-6 py-4 xl:py-10 md:py-8 sm:py-6">
       <div className='grid md:grid-cols-3 grid-cols-1 justify-center items-center gap-12'>
         {technologies.map((technology) => (
           <div key={technology.name} className='w-full hover:scale-110'>

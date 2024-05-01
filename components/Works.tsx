@@ -62,7 +62,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
 
 const Works = () => {
   return (
-    <div id='work' className="px-6">
+    <div id='work' className="relative w-full h-auto px-4 xl:px-10 md:px-8 sm:px-6 py-4 xl:py-10 md:py-8 sm:py-6">
       <motion.div initial="offscreen" whileInView="onscreen" viewport={{ once: true, amount: 0.8 }} variants={cardVariantsY2}>
         <p className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider text-center md:text-start">My work</p>
         <h2 className='text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center md:text-start'>Projects.</h2>

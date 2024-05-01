@@ -12,7 +12,7 @@ export const navData = [
     { name: 'Experince', path: '#experience', icon: <TbUserStar /> },
     { name: 'Tech', path: '#tech', icon: <GiSkills /> },
     { name: 'Work', path: '#work', icon: <MdWorkHistory /> },
-    {name: 'Feedbacks',path: '#feedback',icon: <HiChatBubbleBottomCenterText />},
+    // {name: 'Feedbacks',path: '#feedback',icon: <HiChatBubbleBottomCenterText />},
     {name: 'contact',path: '#contact',icon: <HiEnvelope />},
 ];
 

@@ -8,7 +8,7 @@ import { cardVariantsFadeIn, cardVariantsY1 } from "../app/utils/motion";
 
 const Contact = () => {
   return (
-    <div id='contact' className="w-full h-screen">
+    <div id='contact' className="relative w-full h-screen px-4 xl:px-10 md:px-8 sm:px-6 py-4 xl:py-10 md:py-8 sm:py-6">
       <motion.div
         initial="offscreen" whileInView="onscreen" viewport={{ once: true, amount: 0.8 }} variants={cardVariantsY1}
         className='flex-[0.75] p-8 rounded-2xl'
