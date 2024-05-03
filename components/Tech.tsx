@@ -10,7 +10,7 @@ import { cardVariantsFadeIn, cardVariantsY2, fadeIn } from "@/app/utils/motion";
 const Tech = () => {
   return (
     <div id="tech" className="relative w-full h-auto px-4 xl:px-10 md:px-8 sm:px-6 py-4 xl:py-10 md:py-8 sm:py-6">
-      <motion.div initial="offscreen" whileInView="onscreen" viewport={{ once: true, amount: 0.8 }} variants={cardVariantsY2}>
+      <motion.div initial="offscreen" whileInView="onscreen" viewport={{ once: true, amount: 0.8 }} variants={cardVariantsY2} className="py-4 xl:py-10 md:py-8 sm:py-6">
         <p className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider text-center md:text-start">
           my current framework i use for code
         </p>
