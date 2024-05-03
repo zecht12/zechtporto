@@ -76,11 +76,11 @@ const Works = () => {
           and manage projects effectively.
         </motion.p>
       </div>
-      <motion.div initial="offscreen" whileInView="onscreen" viewport={{ once: true, amount: 0.8 }} variants={cardVariantsFadeIn} className='mt-20 flex flex-wrap items-center justify-center gap-7'>
+      <div className='mt-20 flex flex-wrap items-center justify-center gap-7'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
-      </motion.div>
+      </div>
     </div>
   )
 }
