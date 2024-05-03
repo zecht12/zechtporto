@@ -12,7 +12,7 @@ import { Tilt } from "react-tilt";
 const ProjectCard = ({ index, name, description, tags, image, source_code_link, }: any) => {
   return (
     <motion.div initial="offscreen" whileInView="onscreen" viewport={{ once: true, amount: 0.8 }} variants={cardVariantsFadeIn}>
-      <Tilt
+      <div
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
       >
         <div className='relative w-full h-[230px]'>
@@ -55,7 +55,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
             </p>
           ))}
         </div>
-      </Tilt>
+      </div>
     </motion.div>
   )
 }
