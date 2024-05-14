@@ -4,7 +4,7 @@ import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { EarthCanvas } from "./canvas";
 import { StarWrapper } from "../app/hoc";
-import { cardVariantsFadeIn, cardVariantsY1 } from "../app/utils/motion";
+import { cardVariantsFadeIn, cardVariantsY1, slideIn } from "../app/utils/motion";
 
 const Contact = () => {
   return (
@@ -63,8 +63,8 @@ const Contact = () => {
       </motion.div>
 
       <motion.div
-        initial="offscreen" whileInView="onscreen" viewport={{ once: true, amount: 0.8 }} variants={cardVariantsFadeIn}
-        className='xl:flex justify-end items-center xl:h-[1100px] md:h-[900px] h-[700px]'
+        variants={slideIn("right", "tween", 0.2, 1)}
+        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
       >
         <EarthCanvas />
       </motion.div>
