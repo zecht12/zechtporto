@@ -111,7 +111,7 @@ export const cardVariantsFadeIn: Variants = {
 
 export const cardVariantsX: Variants = {
     offscreen: {
-        x: -20,
+        x: -10,
         opacity: 0
     },
     onscreen: {
@@ -126,7 +126,7 @@ export const cardVariantsX: Variants = {
 
 export const cardVariantsY1: Variants = {
     offscreen: {
-        y: 20,
+        y: 10,
         opacity: 0
     },
     onscreen: {
@@ -141,7 +141,7 @@ export const cardVariantsY1: Variants = {
 
 export const cardVariantsY2: Variants = {
     offscreen: {
-        y: -20,
+        y: -10,
         opacity: 0
     },
     onscreen: {
